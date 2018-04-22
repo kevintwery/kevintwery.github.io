@@ -12,3 +12,7 @@ body, .inputContainer {
 		 margin: 10px;
 	 }
  }
+ .carrotsnonMultipleOf3Error{
+ 	display: none;
+ 	color: red;
+ }
