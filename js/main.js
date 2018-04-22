@@ -5,13 +5,13 @@ checkoutButton.addEventListener('click', function(e){
 	let bananasInput = document.querySelector('.bananas')
 	let carrotsInput = document.querySelector('.carrots')
 	let price = 0
-	if(applesInput){
+	if(applesInput && bananasInput.value.length > 0){
 		price += parseInt(applesInput.value)*2
 	}
-	if(bananasInput){
+	if(bananasInput && bananasInput.value.length > 0){
 		price += parseInt(bananasInput.value)*1.5
 	}
-	if(carrotsInput){
+	if(carrotsInput && carrotsInput.value.length > 0){
 		price += parseInt(carrotsInput.value)*3
 	}
 	document.querySelector('.totalCost').innerHTML = '<div>Price: $'+price+' </div>'
