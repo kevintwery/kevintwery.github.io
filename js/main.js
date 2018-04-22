@@ -17,6 +17,8 @@ checkoutButton.addEventListener('click', function(e){
 		let wasError = showCarrotErrorMessage()
 		if(!wasError){
 			price += parseInt(carrotsInput.value)*3
+		} else {
+			price = 'N/A'
 		}
 	}
 	totalCostDiv.innerHTML = '<div>Price: $'+price+' </div>'
