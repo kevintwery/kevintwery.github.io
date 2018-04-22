@@ -5,7 +5,7 @@ checkoutButton.addEventListener('click', function(e){
 	let bananasInput = document.querySelector('.bananas')
 	let carrotsInput = document.querySelector('.carrots')
 	let price = 0
-	if(applesInput && bananasInput.value.length > 0){
+	if(applesInput && applesInput.value.length > 0){
 		price += parseInt(applesInput.value)*2
 	}
 	if(bananasInput && bananasInput.value.length > 0){
