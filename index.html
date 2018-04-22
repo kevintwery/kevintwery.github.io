@@ -15,20 +15,20 @@
     <h1>Fruit ordering form</h1>
   	<div class="inputContainer">
   		<div>Apples ($2.00 each):</div>
-  		<input class="apples"></input>
+  		<input type="number" class="apples"></input>
   	</div>
     <div class="inputContainer">
       <div>Bananas ($1.50 each):</div>
-      <input class="bananas"></input>
+      <input type="number" class="bananas"></input>
     </div>
     <div class="inputContainer">
       <div>Carrots ($3.00 for 3):</div>
-      <input class="carrots"></input>
+      <input type="number" step="3" class="carrots"></input>
     </div>
     <button class="btn btn-primary checkoutButton">checkout</button>
   	
 	<ul class="list-group ordred items"></ul>
-  <div class="total cost"></div>
+  <div class="totalCost">Total</div>
 
 	 <script src="js/main.js"></script>
     <!-- Optional JavaScript -->
