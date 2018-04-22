@@ -19,7 +19,7 @@ checkoutButton.addEventListener('click', function(e){
 	totalCostDiv.innerHTML = '<div>Price: $'+price+' </div>'
 })
 
-carrotsInput.addEventListener('keyUp', function(e){	
+carrotsInput.addEventListener('keyup', function(e){	
 	let numberofCarrots = parseInt(carrotsInput.value)
 		if(numberofCarrots %3 != 0){
 			totalCostDiv.prop( "disabled", true );
