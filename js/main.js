@@ -32,11 +32,11 @@ function showCarrotErrorMessage(){
 	let numberofCarrots = parseInt(carrotsInput.value)
 	if(numberofCarrots %3 != 0){
 		checkoutButton.classList.add("disabled");
-		carrotsnonMultipleOf3Error.style.display = block
+		carrotsnonMultipleOf3Error.style.display = 'block'
 		return true
 	} else {
 		checkoutButton.classList.remove( "disabled")
-		carrotsnonMultipleOf3Error.style.display = none
+		carrotsnonMultipleOf3Error.style.display = 'none'
 		return false
 	}
 }
