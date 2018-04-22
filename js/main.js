@@ -1,9 +1,11 @@
 var checkoutButton = document.querySelector('.checkoutButton')
 
-checkoutButton.addEventListener('click', function(e){
-	let applesInput = document.querySelector('.apples')
-	let bananasInput = document.querySelector('.bananas')
-	let carrotsInput = document.querySelector('.carrots')
+var applesInput = document.querySelector('.apples')
+var bananasInput = document.querySelector('.bananas')
+var carrotsInput = document.querySelector('.carrots')
+var totalCostDiv = document.querySelector('.totalCost')
+
+checkoutButton.addEventListener('click', function(e){	
 	let price = 0
 	if(applesInput && applesInput.value.length > 0){
 		price += parseInt(applesInput.value)*2
@@ -14,5 +16,14 @@ checkoutButton.addEventListener('click', function(e){
 	if(carrotsInput && carrotsInput.value.length > 0){
 		price += parseInt(carrotsInput.value)*3
 	}
-	document.querySelector('.totalCost').innerHTML = '<div>Price: $'+price+' </div>'
+	totalCostDiv.innerHTML = '<div>Price: $'+price+' </div>'
 })
+
+carrotsInput.addEventListener('keyUp', function(e){	
+	let numberofCarrots = parseInt(carrotsInput.value)
+		if(numberofCarrots %3 != 0){
+			totalCostDiv.prop( "disabled", true );
+		} else {
+			totalCostDiv.prop( "disabled", false );
+		}
+	}
