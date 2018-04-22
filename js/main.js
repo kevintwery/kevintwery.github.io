@@ -16,7 +16,7 @@ checkoutButton.addEventListener('click', function(e){
 	if(carrotsInput && carrotsInput.value.length > 0){
 		let wasError = showCarrotErrorMessage()
 		if(!wasError){
-			price += parseInt(carrotsInput.value)*3
+			price += parseInt(carrotsInput.value)
 		} else {
 			price = 'N/A'
 		}
