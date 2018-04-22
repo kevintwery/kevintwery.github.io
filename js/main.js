@@ -32,7 +32,7 @@ function showCarrotErrorMessage(){
 	var checkoutButton = document.querySelector('.checkoutButton')
 	var carrotsnonMultipleOf3Error = document.querySelector('.carrotsnonMultipleOf3Error')
 	let numberofCarrots = parseInt(carrotsInput.value)
-	if(numberofCarrots %3 != 0){
+	if(carrotsInput && carrotsInput.value.length > 0 && numberofCarrots %3 != 0){
 		checkoutButton.classList.add("disabled");
 		carrotsnonMultipleOf3Error.style.display = 'block'
 		return true
