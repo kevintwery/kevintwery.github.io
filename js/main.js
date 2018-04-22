@@ -27,3 +27,4 @@ carrotsInput.addEventListener('keyUp', function(e){
 			totalCostDiv.prop( "disabled", false );
 		}
 	}
+)
